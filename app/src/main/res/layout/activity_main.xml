@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/main_linearlayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@color/material_dynamic_neutral90">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width = "match_parent"
+        android:layout_height="60sp"
+        android:background="@color/green"
+        android:gravity="center_vertical"
+        android:text="  CALENDAR"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        />
+    <Space
+        android:layout_width="80sp"
+        android:layout_height="100sp"
+        android:layout_gravity="center"/>
+    <Button
+        android:id="@+id/buttonToday"
+        android:layout_width="130dp"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/green"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="Today"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp">
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="←"
+            android:textColor="@color/green"
+            android:background="@null"
+            android:textStyle="bold"
+            android:textSize="25sp"/>
+
+        <TextView
+            android:id="@+id/textMonth"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Feb 2022"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+        <Button
+            android:id="@+id/btn_forward"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="→"
+            android:textColor="@color/green"
+            android:background="@null"
+            android:textStyle="bold"
+            android:textSize="25sp"/>
+
+    </LinearLayout>
+    <!-- сам календарь -->
+    <!-- дни недели -->
+    <LinearLayout
+        android:layout_width="390dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10sp"
+        android:layout_marginBottom="10sp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="MON"
+            android:textColor="@color/green"
+            android:textAlignment="center"
+            android:textSize="16sp"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="TUE"
+            android:textColor="@color/green"
+            android:textAlignment="center"
+            android:textSize="16sp"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="WED"
+            android:textColor="@color/green"
+            android:textAlignment="center"
+            android:textSize="16sp"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="THUR"
+            android:textColor="@color/green"
+            android:textAlignment="center"
+            android:textSize="16sp"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="FRI"
+            android:textColor="@color/green"
+            android:textAlignment="center"
+            android:textSize="16sp"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="SUT"
+            android:textColor="@color/green"
+            android:textAlignment="center"
+            android:textSize="16sp"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="SUN"
+            android:textColor="@color/green"
+            android:textAlignment="center"
+            android:textSize="16sp"/>
+    </LinearLayout>
+    <!-- первая неделя -->
+    <LinearLayout
+        android:id="@+id/lay_1"
+        android:layout_width="390dp"
+        android:layout_height="40sp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10sp">
+
+    </LinearLayout>
+    <!-- вторая неделя -->
+    <LinearLayout
+        android:layout_width="390dp"
+        android:layout_height="40sp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10sp"
+        android:id="@+id/lay_2">
+
+    </LinearLayout>
+    <!-- третья неделя -->
+    <LinearLayout
+        android:layout_width="390dp"
+        android:layout_height="40sp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10sp"
+        android:id="@+id/lay_3">
+
+    </LinearLayout>
+    <!-- четвертая неделя -->
+    <LinearLayout
+        android:layout_width="390dp"
+        android:layout_height="40sp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10sp"
+        android:id="@+id/lay_4">
+
+    </LinearLayout>
+    <!-- пятая неделя -->
+    <LinearLayout
+        android:layout_width="390dp"
+        android:layout_height="40sp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10sp"
+        android:id="@+id/lay_5">
+
+    </LinearLayout>
+    <!-- пятая неделя -->
+    <LinearLayout
+        android:layout_width="390dp"
+        android:layout_height="40sp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10sp"
+        android:id="@+id/lay_6">
+
+    </LinearLayout>
+
+</LinearLayout>
